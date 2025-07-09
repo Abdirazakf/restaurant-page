@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: url(https://media.istockphoto.com/id/1687246566/vector/seamless-spicy-hot-wings-and-sauce-doodles.jpg?s=612x612&w=0&k=20&c=Py2oW0A2UVXD-JkXk8O0L2uA67l8mA9XJJ7HuPRL1h4=);
+}
+
+header {
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+nav > button {
+    min-width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+}
+
+#content {
+    border: 1px solid red;
+    height: 80%;
+}
