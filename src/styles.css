@@ -80,6 +80,11 @@ button {
     border-radius: 20px;
 }
 
+#content > footer {
+    background-color: var(--orange);
+    font-style: italic;
+}
+
 .content-header {
     display: flex;
     justify-content: center;
@@ -101,6 +106,7 @@ button {
 
 .about-content > h1 {
     margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .review > h3 {

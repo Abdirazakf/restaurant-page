@@ -174,10 +174,9 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
 
             function aboutStory(){
                 const contentStory = document.createElement("div")
-                contentStory.classList.add("review")
+                contentStory.classList.add("about-content")
                 const header = document.createElement("h1")
                 header.textContent = "Our Story"
-                header.style.textAlign = "center"
                 const paragraph = document.createElement("p")
                 paragraph.textContent = "Wings and Things was born from a simple passion: creating the perfect wing experience. Our founders believed that great wings shouldn't be hard to find, and that watching the game should always come with exceptional food and genuine hospitality. What started as a dream to bring authentic, made-from-scratch wings to our community has grown into Machesney Park's premier sports bar destination."
                 contentStory.appendChild(header)
@@ -190,7 +189,6 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 contentSpecial.classList.add("about-content")
                 const header = document.createElement("h1")
                 header.textContent = "What Makes Us Special"
-                header.style.textAlign = "center"
                 const heading1 = document.createElement("h3")
                 const heading2 = document.createElement("h3")
                 const heading3 = document.createElement("h3")
@@ -212,10 +210,30 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 contentSpecial.appendChild(para3)
                 contentArea.appendChild(contentSpecial)
             }
+
+            function aboutVisit(){
+                const contentVisit = document.createElement("div")
+                contentVisit.classList.add("about-content")
+                const header = document.createElement("h1")
+                header.textContent = "Visit Us Today"
+                const para = document.createElement("p")
+                para.textContent = "Ready to discover why Wings and Things has become Machesney Park's go-to spot for wings and sports? We're open Tuesday through Sunday, with extended hours on weekends for all the big games. Whether you're planning a casual dinner, hosting a watch party, or just craving the best wings in town, we can't wait to welcome you to the Wings and Things family."
+                contentVisit.appendChild(header)
+                contentVisit.appendChild(para)
+                contentArea.appendChild(contentVisit)
+            }
+
+            function aboutFooter(){
+                const footer = document.createElement("footer")
+                footer.textContent = "Come for the wings, stay for the atmosphere, leave as family."
+                contentArea.appendChild(footer)
+            }
             
             aboutHeader()
             aboutStory()
             aboutSpecial()
+            aboutVisit()
+            aboutFooter()
         }
 
         init() {
