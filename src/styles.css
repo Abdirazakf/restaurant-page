@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-size: 1vw;
 }
 
 :root {
@@ -33,6 +34,10 @@ nav {
     justify-content: center;
     align-items: flex-end;
     gap: 20px;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 button {
@@ -82,15 +87,28 @@ button {
 }
 
 .content-header > img {
-    width: 120px;
+    width: 8vw;
 }
 
-.review {
+.review,
+.about-content {
     padding: 20px;
+}
+
+.review > h1 {
+    margin: 0;
+}
+
+.about-content > h1 {
+    margin: 0 0 20px 0;
 }
 
 .review > h3 {
     text-align: end;
+}
+
+.about-content > h3 {
+    text-align: left;
 }
 
 .hours {

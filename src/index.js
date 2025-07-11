@@ -117,9 +117,24 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
         }
 
         addMenuContent() {
-            const div = document.createElement("div")
-            div.textContent = "Menu Content"
-            contentArea.appendChild(div)
+            function menuHeader(){
+                const contentHeader = document.createElement("div")
+                contentHeader.classList.add("content-header")
+                const leftWing = document.createElement("img")
+                const rightWing = document.createElement("img")
+                const heading1 = document.createElement("h1")
+                heading1.textContent = "Menu"
+                leftWing.src = chickenWing
+                rightWing.src = chickenWing
+                leftWing.alt = "chicken-wing"
+                rightWing.alt = "chicken-wing"
+                contentHeader.appendChild(leftWing)
+                contentHeader.appendChild(heading1)
+                contentHeader.appendChild(rightWing)
+                contentArea.appendChild(contentHeader)
+            }
+
+            menuHeader()
         }
 
         init() {
@@ -140,9 +155,67 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
         }
 
         addAboutContent() {
-            const div = document.createElement("div")
-            div.textContent = "About Content"
-            contentArea.appendChild(div)
+            function aboutHeader(){
+                const contentHeader = document.createElement("div")
+                contentHeader.classList.add("content-header")
+                const leftWing = document.createElement("img")
+                const rightWing = document.createElement("img")
+                const heading1 = document.createElement("h1")
+                heading1.textContent = "About"
+                leftWing.src = chickenWing
+                rightWing.src = chickenWing
+                leftWing.alt = "chicken-wing"
+                rightWing.alt = "chicken-wing"
+                contentHeader.appendChild(leftWing)
+                contentHeader.appendChild(heading1)
+                contentHeader.appendChild(rightWing)
+                contentArea.appendChild(contentHeader)
+            }
+
+            function aboutStory(){
+                const contentStory = document.createElement("div")
+                contentStory.classList.add("review")
+                const header = document.createElement("h1")
+                header.textContent = "Our Story"
+                header.style.textAlign = "center"
+                const paragraph = document.createElement("p")
+                paragraph.textContent = "Wings and Things was born from a simple passion: creating the perfect wing experience. Our founders believed that great wings shouldn't be hard to find, and that watching the game should always come with exceptional food and genuine hospitality. What started as a dream to bring authentic, made-from-scratch wings to our community has grown into Machesney Park's premier sports bar destination."
+                contentStory.appendChild(header)
+                contentStory.appendChild(paragraph)
+                contentArea.appendChild(contentStory)
+            }
+
+            function aboutSpecial(){
+                const contentSpecial = document.createElement("div")
+                contentSpecial.classList.add("about-content")
+                const header = document.createElement("h1")
+                header.textContent = "What Makes Us Special"
+                header.style.textAlign = "center"
+                const heading1 = document.createElement("h3")
+                const heading2 = document.createElement("h3")
+                const heading3 = document.createElement("h3")
+                const para1 = document.createElement("p")
+                const para2 = document.createElement("p")
+                const para3 = document.createElement("p")
+                heading1.textContent = "Authentic Flavors, Fresh Ingredients"
+                para1.textContent = "Every wing that leaves our kitchen is hand-tossed in sauces and rubs made fresh daily. From our classic buffalo that strikes the perfect balance of heat and tang, to our signature dry rub with its smoky, addictive flavor profile, we've crafted each recipe to deliver bold, memorable taste. Our honey garlic has become a local favorite, while our Nashville hot brings serious heat for those who dare"
+                heading2.textContent = "The Perfect Game Day Atmosphere"
+                para2.textContent = "Step inside and you'll immediately feel at home. Multiple large-screen TVs ensure you never miss a moment of the action, whether you're cheering for the home team or catching up on highlights. Our casual, welcoming environment is designed for good times – whether you're flying solo, on a date night, or bringing the whole crew."
+                heading3.textContent = "Service That Goes the Extra Mile"
+                para3.textContent = "Our team doesn't just take orders – they're part of the Wings and Things family, and they treat every guest like family too. From helping you navigate our extensive flavor menu to keeping your drinks filled throughout the game, we're committed to making your experience exceptional from start to finish."
+                contentSpecial.appendChild(header)
+                contentSpecial.appendChild(heading1)
+                contentSpecial.appendChild(para1)
+                contentSpecial.appendChild(heading2)
+                contentSpecial.appendChild(para2)
+                contentSpecial.appendChild(heading3)
+                contentSpecial.appendChild(para3)
+                contentArea.appendChild(contentSpecial)
+            }
+            
+            aboutHeader()
+            aboutStory()
+            aboutSpecial()
         }
 
         init() {
