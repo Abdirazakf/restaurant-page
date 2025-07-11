@@ -56,9 +56,7 @@ button {
 }
 
 #content {
-    height: 80%;
     width: 50%;
-    overflow: auto;
     background-color: var(--orange);
     border: 2px solid var(--orange);
     border-radius: 30px;
@@ -67,6 +65,7 @@ button {
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -92,6 +91,26 @@ button {
 
 .review > h3 {
     text-align: end;
+}
+
+.hours {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.hours > h2 {
+    margin-top: 0;
+}
+
+.hours > div {
+    padding: 5px;
+}
+
+.location {
+    padding: 25px;
 }
 
 footer {
