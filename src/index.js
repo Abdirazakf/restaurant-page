@@ -134,7 +134,46 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 contentArea.appendChild(contentHeader)
             }
 
+            function wing(){
+                contentArea.setAttribute("style", "width: 70%")
+                const wingContainer = document.createElement("div")
+                wingContainer.classList.add("wing-container")
+                const wingContent = document.createElement("div")
+                wingContent.classList.add("wing-content")
+                const header = document.createElement("h1")
+                header.textContent = "Wings"
+                const wing1 = document.createElement("div")
+                wing1.classList.add("wing-1")
+                const wing1Header = document.createElement("h1")
+                wing1Header.classList.add("wing-header")
+                wing1Header.textContent = "Wings Combo(6 Pieces)"
+                const wing1Price = document.createElement("div")
+                wing1Price.classList.add("wing-price")
+                wing1Price.textContent = "$9.99+"
+                wing1.appendChild(wing1Header)
+                wing1.appendChild(wing1Price)
+                wingContent.appendChild(wing1)
+                
+                const wing2 = document.createElement("div")
+                wing2.classList.add("wing-2")
+                const wing2Header = document.createElement("h1")
+                wing2Header.classList.add("wing-header")
+                wing2Header.textContent = "Wings Only (10 Pieces)"
+                const wing2Price = document.createElement("div")
+                wing2Price.classList.add("wing-price")
+                wing2Price.textContent = "$9.99+"
+                wing2.appendChild(wing2Header)
+                wing2.appendChild(wing2Price)
+                wingContent.appendChild(wing2)
+
+
+                wingContainer.appendChild(header)
+                wingContainer.appendChild(wingContent)
+                contentArea.appendChild(wingContainer)
+            }
+
             menuHeader()
+            wing()
         }
 
         init() {

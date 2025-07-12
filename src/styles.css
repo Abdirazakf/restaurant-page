@@ -8,6 +8,8 @@ html, body {
     --yellow: #ffc60b;
     --orange: #fc9744;
     --mirage: #1e2939;
+    --item-name-color: #1C1B27;
+    --item-price-color: #1776D4;
 }
 
 * {
@@ -135,6 +137,96 @@ button {
 
 .location {
     padding: 25px;
+}
+
+.wing-container {
+    width: 80%;
+    padding: 25px;    
+}
+
+.wing-container > h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.wing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px 25px;
+}
+
+.wing-content > * {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 0.8fr;
+}
+
+.wing-header {
+    color: var(--item-name-color);
+}
+
+.wing-price {
+    color: var(--item-price-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.wing-1 {
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.wing-2 {
+    
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.wing-3 {
+    
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.wing-4 {
+    
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.wing-5 {
+    
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.wing-6 {
+    
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.wing-7 {
+    
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.wing-8 {
+    
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.wing-9 {
+    
+    grid-column: 1;
+    grid-row: 5;
 }
 
 footer {
