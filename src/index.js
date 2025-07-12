@@ -135,7 +135,6 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
             }
 
             function menuWings(){
-                contentArea.setAttribute("style", "width: 70%")
                 const wingContainer = document.createElement("div")
                 wingContainer.classList.add("wing-container")
                 const wingContent = document.createElement("div")
