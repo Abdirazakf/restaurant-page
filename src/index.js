@@ -426,10 +426,84 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 contentArea.appendChild(gyroContainer)
             }
 
+            function menuDrink(){
+                const drinkContainer = document.createElement("div")
+                drinkContainer.classList.add("wing-container")
+                const drinkContent = document.createElement("div")
+                drinkContent.classList.add("drink-content")
+                const header = document.createElement("h1")
+                header.textContent = "Drinks"
+
+                function drink1(){
+                    const drink = document.createElement("div")
+                    drink.classList.add("philly-1")
+                    const drinkHeader = document.createElement("h1")
+                    drinkHeader.classList.add("wing-header")
+                    drinkHeader.textContent = "Fountain Drink"
+                    const drinkPrice = document.createElement("div")
+                    drinkPrice.classList.add("wing-price")
+                    drinkPrice.textContent = "$2.45+"
+                    drink.appendChild(drinkHeader)
+                    drink.appendChild(drinkPrice)
+                    drinkContent.appendChild(drink)
+                }
+
+                function drink2(){
+                    const drink = document.createElement("div")
+                    drink.classList.add("philly-2")
+                    const drinkHeader = document.createElement("h1")
+                    drinkHeader.classList.add("wing-header")
+                    drinkHeader.textContent = "Can Drink"
+                    const drinkPrice = document.createElement("div")
+                    drinkPrice.classList.add("wing-price")
+                    drinkPrice.textContent = "$1.89+"
+                    drink.appendChild(drinkHeader)
+                    drink.appendChild(drinkPrice)
+                    drinkContent.appendChild(drink)
+                }
+
+                function drink3(){
+                    const drink = document.createElement("div")
+                    drink.classList.add("philly-3")
+                    const drinkHeader = document.createElement("h1")
+                    drinkHeader.classList.add("wing-header")
+                    drinkHeader.textContent = "2 Liter"
+                    const drinkPrice = document.createElement("div")
+                    drinkPrice.classList.add("wing-price")
+                    drinkPrice.textContent = "$4.29"
+                    drink.appendChild(drinkHeader)
+                    drink.appendChild(drinkPrice)
+                    drinkContent.appendChild(drink)
+                }
+
+                function drink4(){
+                    const drink = document.createElement("div")
+                    drink.classList.add("drink-4")
+                    const drinkHeader = document.createElement("h1")
+                    drinkHeader.classList.add("wing-header")
+                    drinkHeader.textContent = "Bottled Water"
+                    const drinkPrice = document.createElement("div")
+                    drinkPrice.classList.add("wing-price")
+                    drinkPrice.textContent = "$1.50"
+                    drink.appendChild(drinkHeader)
+                    drink.appendChild(drinkPrice)
+                    drinkContent.appendChild(drink)
+                }
+
+                drink1()
+                drink2()
+                drink3()
+                drink4()
+                drinkContainer.appendChild(header)
+                drinkContainer.appendChild(drinkContent)
+                contentArea.appendChild(drinkContainer)
+            }
+
             menuHeader()
             menuWings()
             menuPhilly()
             menuGyro()
+            menuDrink()
         }
 
         init() {

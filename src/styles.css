@@ -170,9 +170,17 @@ button {
     gap: 10px;
 }
 
+.drink-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
 .wing-content > *,
 .philly-content > *,
-.gyro-content > * {
+.gyro-content > *,
+.drink-content > * {
     background-color: white;
     padding: 10px;
     border: 2px solid black;
@@ -246,6 +254,10 @@ button {
 
 .philly-3 {
     grid-row: 3;
+}
+
+.drink-4 {
+    grid-row: 4;
 }
 
 footer {
