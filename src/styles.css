@@ -63,7 +63,7 @@ button {
 }
 
 #content {
-    width: 70%;
+    width: 50%;
     background-color: var(--orange);
     border: 2px solid var(--orange);
     border-radius: 30px;
