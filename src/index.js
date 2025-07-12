@@ -134,7 +134,7 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 contentArea.appendChild(contentHeader)
             }
 
-            function wing(){
+            function menuWings(){
                 contentArea.setAttribute("style", "width: 70%")
                 const wingContainer = document.createElement("div")
                 wingContainer.classList.add("wing-container")
@@ -142,38 +142,294 @@ import chickenWing from "./assets/img/roast-chicken-wings-3.svg"
                 wingContent.classList.add("wing-content")
                 const header = document.createElement("h1")
                 header.textContent = "Wings"
-                const wing1 = document.createElement("div")
-                wing1.classList.add("wing-1")
-                const wing1Header = document.createElement("h1")
-                wing1Header.classList.add("wing-header")
-                wing1Header.textContent = "Wings Combo(6 Pieces)"
-                const wing1Price = document.createElement("div")
-                wing1Price.classList.add("wing-price")
-                wing1Price.textContent = "$9.99+"
-                wing1.appendChild(wing1Header)
-                wing1.appendChild(wing1Price)
-                wingContent.appendChild(wing1)
-                
-                const wing2 = document.createElement("div")
-                wing2.classList.add("wing-2")
-                const wing2Header = document.createElement("h1")
-                wing2Header.classList.add("wing-header")
-                wing2Header.textContent = "Wings Only (10 Pieces)"
-                const wing2Price = document.createElement("div")
-                wing2Price.classList.add("wing-price")
-                wing2Price.textContent = "$9.99+"
-                wing2.appendChild(wing2Header)
-                wing2.appendChild(wing2Price)
-                wingContent.appendChild(wing2)
 
+                function wing1(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-1")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo(6 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with fries and a drink"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$11.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
 
+                function wing2(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-2")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (10 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with fries and a drink"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$15.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing3(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-3")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (15 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with fries and a drink"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$21.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing4(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-4")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (20 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with medium fries and a drink"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$28.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing5(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-5")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (30 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with medium fries and two drinks"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$41.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing6(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-6")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (40 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with medium fries and two drinks"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$52.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing7(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-7")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (50 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with large fries and a 2 Liter"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$64.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing8(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-8")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (75 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with large fries and a 2 Liter"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$89.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                function wing9(){
+                    const wing = document.createElement("div")
+                    wing.classList.add("wing-9")
+                    const wingHeader = document.createElement("h1")
+                    wingHeader.classList.add("wing-header")
+                    wingHeader.textContent = "Wings Combo (100 Pieces)"
+                    const wingNote = document.createElement("div")
+                    wingNote.textContent = "Served with large fries and a 2 Liter"
+                    const wingPrice = document.createElement("div")
+                    wingPrice.classList.add("wing-price")
+                    wingPrice.textContent = "$109.99+"
+                    wing.appendChild(wingHeader)
+                    wing.appendChild(wingNote)
+                    wing.appendChild(wingPrice)
+                    wingContent.appendChild(wing)
+                }
+
+                wing1()
+                wing2()
+                wing3()
+                wing4()
+                wing5()
+                wing6()
+                wing7()
+                wing8()
+                wing9()
                 wingContainer.appendChild(header)
                 wingContainer.appendChild(wingContent)
                 contentArea.appendChild(wingContainer)
             }
 
+            function menuPhilly(){
+                const phillyContainer = document.createElement("div")
+                phillyContainer.classList.add("wing-container")
+                const phillyContent = document.createElement("div")
+                phillyContent.classList.add("philly-content")
+                const header = document.createElement("h1")
+                header.textContent = "Philly"
+
+                function philly1() {
+                    const philly = document.createElement("div")
+                    philly.classList.add("philly-1")
+                    const phillyHeader = document.createElement("h1")
+                    phillyHeader.classList.add("wing-header")
+                    phillyHeader.textContent = "Steak Philly"
+                    const phillyNote = document.createElement("div")
+                    phillyNote.textContent = "Grilled Onion, green pepper, mushroom, mayo and cheese with medium fries and a drink"
+                    const phillyPrice = document.createElement("div")
+                    phillyPrice.classList.add("wing-price")
+                    phillyPrice.textContent = "$10.49+"
+                    philly.appendChild(phillyHeader)
+                    philly.appendChild(phillyNote)
+                    philly.appendChild(phillyPrice)
+                    phillyContent.appendChild(philly)
+                }
+
+                function philly2(){
+                    const philly = document.createElement("div")
+                    philly.classList.add("philly-2")
+                    const phillyHeader = document.createElement("h1")
+                    phillyHeader.classList.add("wing-header")
+                    phillyHeader.textContent = "Chicken Philly"
+                    const phillyNote = document.createElement("div")
+                    phillyNote.textContent = "Grilled Onion, green pepper, mushroom, mayo and cheese with medium fries and a drink"
+                    const phillyPrice = document.createElement("div")
+                    phillyPrice.classList.add("wing-price")
+                    phillyPrice.textContent = "$10.49+"
+                    philly.appendChild(phillyHeader)
+                    philly.appendChild(phillyNote)
+                    philly.appendChild(phillyPrice)
+                    phillyContent.appendChild(philly)
+                }
+
+                function philly3(){
+                    const philly = document.createElement("div")
+                    philly.classList.add("philly-3")
+                    const phillyHeader = document.createElement("h1")
+                    phillyHeader.classList.add("wing-header")
+                    phillyHeader.textContent = "Shrimp Philly"
+                    const phillyNote = document.createElement("div")
+                    phillyNote.textContent = "Grilled Onion, green pepper, mushroom, mayo and cheese with medium fries and a drink"
+                    const phillyPrice = document.createElement("div")
+                    phillyPrice.classList.add("wing-price")
+                    phillyPrice.textContent = "$11.99+"
+                    philly.appendChild(phillyHeader)
+                    philly.appendChild(phillyNote)
+                    philly.appendChild(phillyPrice)
+                    phillyContent.appendChild(philly)
+                }
+
+                philly1()
+                philly2()
+                philly3()
+                phillyContainer.appendChild(header)
+                phillyContainer.appendChild(phillyContent)
+                contentArea.appendChild(phillyContainer)
+            }
+
+            function menuGyro(){
+                const gyroContainer = document.createElement("div")
+                gyroContainer.classList.add("wing-container")
+                const gyroContent = document.createElement("div")
+                gyroContent.classList.add("gyro-content")
+                const header = document.createElement("h1")
+                header.textContent = "Gyro Wrap"
+
+                function gyro1(){
+                    const gyro = document.createElement("div")
+                    gyro.classList.add("philly-1")
+                    const gyroHeader = document.createElement("h1")
+                    gyroHeader.classList.add("wing-header")
+                    gyroHeader.textContent = "Gyro"
+                    const gyroNote = document.createElement("div")
+                    gyroNote.textContent = "Served with lettuce, tomato, onions, and cucumber sauce with medium fries and a drink"
+                    const gyroPrice = document.createElement("div")
+                    gyroPrice.classList.add("wing-price")
+                    gyroPrice.textContent = "$10.49+"
+                    gyro.appendChild(gyroHeader)
+                    gyro.appendChild(gyroNote)
+                    gyro.appendChild(gyroPrice)
+                    gyroContent.appendChild(gyro)
+                }
+
+                function gyro2(){
+                    const gyro = document.createElement("div")
+                    gyro.classList.add("philly-2")
+                    const gyroHeader = document.createElement("h1")
+                    gyroHeader.classList.add("wing-header")
+                    gyroHeader.textContent = "Chicken Gyro"
+                    const gyroNote = document.createElement("div")
+                    gyroNote.textContent = "Served with lettuce, tomato, onions, and cucumber sauce with medium fries and a drink"
+                    const gyroPrice = document.createElement("div")
+                    gyroPrice.classList.add("wing-price")
+                    gyroPrice.textContent = "$10.49+"
+                    gyro.appendChild(gyroHeader)
+                    gyro.appendChild(gyroNote)
+                    gyro.appendChild(gyroPrice)
+                    gyroContent.appendChild(gyro)
+                }
+
+                gyro1()
+                gyro2()
+                gyroContainer.appendChild(header)
+                gyroContainer.appendChild(gyroContent)
+                contentArea.appendChild(gyroContainer)
+            }
+
             menuHeader()
-            wing()
+            menuWings()
+            menuPhilly()
+            menuGyro()
         }
 
         init() {

@@ -156,7 +156,23 @@ button {
     gap: 10px 25px;
 }
 
-.wing-content > * {
+.philly-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gyro-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.wing-content > *,
+.philly-content > *,
+.gyro-content > * {
     background-color: white;
     padding: 10px;
     border: 2px solid black;
@@ -176,57 +192,60 @@ button {
 }
 
 .wing-1 {
-    
     grid-column: 1;
     grid-row: 1;
 }
 
 .wing-2 {
-    
     grid-column: 2;
     grid-row: 1;
 }
 
 .wing-3 {
-    
     grid-column: 1;
     grid-row: 2;
 }
 
 .wing-4 {
-    
     grid-column: 2;
     grid-row: 2;
 }
 
 .wing-5 {
-    
     grid-column: 1;
     grid-row: 3;
 }
 
 .wing-6 {
-    
     grid-column: 2;
     grid-row: 3;
 }
 
 .wing-7 {
-    
     grid-column: 1;
     grid-row: 4;
 }
 
 .wing-8 {
-    
     grid-column: 2;
     grid-row: 4;
 }
 
 .wing-9 {
-    
     grid-column: 1;
     grid-row: 5;
+}
+
+.philly-1 {
+    grid-row: 1;
+}
+
+.philly-2 {
+    grid-row: 2;
+}
+
+.philly-3 {
+    grid-row: 3;
 }
 
 footer {
